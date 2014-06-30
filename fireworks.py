@@ -3,14 +3,14 @@ import pandas as pd
 
 # Read injuries
 # Data from https://www.cpsc.gov/cgibin/NEISSQuery/Home.aspx
-injuries = pd.read_csv("firework-injuries-2013.tsv", sep="\t")
+injuries = pd.read_csv("data/firework-injuries-2013.tsv", sep="\t")
 
 # Combine narrative columns
 injuries["narrative"] = injuries.narr1.fillna("") + " " + injuries.narr2.fillna("")
 
 # Read diagnosis codes
 # via https://www.cpsc.gov//Global/Neiss_prod/completemanual%20.pdf
-codes = pd.read_csv("niess-codes.txt", sep="\t").set_index("code")
+codes = pd.read_csv("data/niess-codes.tsv", sep="\t").set_index("code")
 
 # Join diagnosis names to injuries
 diagnosed = injuries.set_index("diag").join(codes).set_index("diagnosis")
