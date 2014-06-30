@@ -1,0 +1,31 @@
+code	diagnosis
+50	Amputation
+65	Anoxia
+42	Aspirated foreign object
+72	Avulsion
+48	Burns, scald
+51	Burns, thermal
+49	Burns, chemical
+73	Burns, radiation
+46	Burns, electrical
+47	Burns, not specified
+52	Concussions
+53	Contusions, Abrasions
+54	Crushing
+60	Dental injury
+74	Dermatitis, Conjunctivitis
+55	Dislocation
+67	Electric shock
+56	Foreign body
+57	Fracture
+58	Hematoma
+66	Hemorrhage
+41	Ingested foreign object
+62	Internal organ injury
+59	Laceration
+61	Nerve damage
+68	Poisoning
+63	Puncture
+64	Strain or Sprain
+69	Submersion (including Drowning)
+71	Other/Not Stated
